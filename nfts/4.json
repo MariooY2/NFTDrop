@@ -1,0 +1,10 @@
+{
+  "name": "CyberCat #4",
+  "description": "A high-tech feline from the metaverse.",
+  "image": "https://bafybeihufv2xsgjxc7x6zu4raluamfom5k5s3hvkp2rshx5c6tbgy2656u.ipfs.w3s.link/4.jpg",
+  "attributes": [
+    { "trait_type": "Background", "value": "Virtual Lab" },
+    { "trait_type": "Fur", "value": "Golden" },
+    { "trait_type": "Eyes", "value": "Cyborg Blue" }
+  ]
+}

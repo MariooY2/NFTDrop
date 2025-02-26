@@ -1,0 +1,10 @@
+{
+  "name": "CyberCat #5",
+  "description": "A neon cat prowling the blockchain.",
+  "image": "https://bafybeihufv2xsgjxc7x6zu4raluamfom5k5s3hvkp2rshx5c6tbgy2656u.ipfs.w3s.link/5.jpg",
+  "attributes": [
+    { "trait_type": "Background", "value": "Neon Jungle" },
+    { "trait_type": "Fur", "value": "Lava Red" },
+    { "trait_type": "Eyes", "value": "Flaming Orange" }
+  ]
+}
