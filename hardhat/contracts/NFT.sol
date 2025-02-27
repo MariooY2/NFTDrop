@@ -6,7 +6,7 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {Strings} from "@openzeppelin/contracts/utils/Strings.sol";
 
 contract NFT is ERC721, Ownable {
-    uint256 private _nextTokenId;
+    uint256 private _nextTokenId = 1;
     uint256 public constant MAX_SUPPLY = 5;
     uint256 public constant PRICE = 0.1 ether;
     uint256 public constant MAX_PER_WALLET = 2;
@@ -20,12 +20,12 @@ contract NFT is ERC721, Ownable {
 
     function _baseURI() internal pure override returns (string memory) {
         return
-            "https://bafybeihufv2xsgjxc7x6zu4raluamfom5k5s3hvkp2rshx5c6tbgy2656u.ipfs.w3s.link/";
+            "https://bafybeibdpavbw5qw7u4xry4f4zhn7kaeg3ceurcx5er4uxfuyapqxfjpzy.ipfs.w3s.link/";
     }
 
     function safeMint(address to) public payable returns (uint256) {
         require(tx.origin == msg.sender, "Contracts cannot mint");
-        require(_nextTokenId < MAX_SUPPLY, "Max supply reached");
+        require(_nextTokenId == MAX_SUPPLY, "Max supply reached");
         require(msg.value == PRICE, "Incorrect ETH amount");
         require(
             mintedPerWallet[to] < MAX_PER_WALLET,
