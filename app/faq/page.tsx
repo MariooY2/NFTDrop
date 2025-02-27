@@ -1,17 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import Head from "next/head";
-import Link from "next/link";
 import {
   ChevronDown,
   ChevronUp,
   HelpCircle,
-  Home,
   X,
   MessageCircle,
 } from "lucide-react";
 
-// FAQ item type
 interface FAQItem {
   question: string;
   answer: string;
@@ -259,8 +255,8 @@ const FAQPage: React.FC = () => {
                   Still have questions?
                 </h3>
                 <p className="text-indigo-200 mb-6">
-                  Can't find the answer you're looking for? Please reach out to
-                  our community support team.
+                  Can&apos;t find the answer you&apos;re looking for? Please
+                  reach out to our community support team.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a

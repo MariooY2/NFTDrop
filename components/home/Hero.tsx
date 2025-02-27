@@ -7,8 +7,8 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-purple-900/30 to-gray-900"></div>
 
       <div className="relative w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+        <h1 className="mb-4">
+          <span className="inline-block text-4xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 leading-tight pb-5">
             Cosmic Voyagers NFT
           </span>
         </h1>

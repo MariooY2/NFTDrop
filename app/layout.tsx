@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Providers } from "./Providers";
+import "@rainbow-me/rainbowkit/styles.css";
+
 export const metadata: Metadata = {
   title: "Cosmic Voyagers NFT",
   description:
@@ -15,10 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head />
       <body className="bg-gray-900">
-        <Navbar />
-        {children}
-        <Footer />
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

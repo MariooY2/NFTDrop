@@ -1,7 +1,7 @@
+"use client";
 // components/home/AboutSection.tsx
 import Link from "next/link";
 import Image from "next/image";
-
 export default function AboutSection() {
   return (
     <section className="py-16 bg-gray-800">
