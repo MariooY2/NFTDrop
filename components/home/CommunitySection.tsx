@@ -1,15 +1,39 @@
+import { FaDiscord, FaTwitter, FaInstagram } from "react-icons/fa";
+import { SiOpensea } from "react-icons/si";
+
 type SocialPlatform = {
   name: string;
   color: string;
   url: string;
+  icon: React.ReactNode;
 };
 
 export default function CommunitySection() {
   const platforms: SocialPlatform[] = [
-    { name: "Discord", color: "bg-indigo-600 hover:bg-indigo-700", url: "#" },
-    { name: "Twitter", color: "bg-blue-500 hover:bg-blue-600", url: "#" },
-    { name: "Instagram", color: "bg-pink-600 hover:bg-pink-700", url: "#" },
-    { name: "OpenSea", color: "bg-blue-600 hover:bg-blue-700", url: "#" },
+    {
+      name: "Discord",
+      color: "bg-indigo-600 hover:bg-indigo-700",
+      url: "#",
+      icon: <FaDiscord size={24} />,
+    },
+    {
+      name: "Twitter",
+      color: "bg-blue-500 hover:bg-blue-600",
+      url: "#",
+      icon: <FaTwitter size={24} />,
+    },
+    {
+      name: "Instagram",
+      color: "bg-pink-600 hover:bg-pink-700",
+      url: "#",
+      icon: <FaInstagram size={24} />,
+    },
+    {
+      name: "OpenSea",
+      color: "bg-blue-600 hover:bg-blue-700",
+      url: "#",
+      icon: <SiOpensea size={24} />,
+    },
   ];
 
   return (
@@ -29,9 +53,10 @@ export default function CommunitySection() {
             <a
               href={platform.url}
               key={index}
-              className={`${platform.color} text-white font-bold py-3 px-6 rounded-lg transition-colors`}
+              className={`${platform.color} text-white font-bold py-3 px-6 rounded-lg transition-colors flex items-center gap-2`}
             >
-              {platform.name}
+              {platform.icon}
+              <span>{platform.name}</span>
             </a>
           ))}
         </div>
