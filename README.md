@@ -1,6 +1,6 @@
 # Cosmic Voyagers NFT
 
-![Cosmic Voyagers NFT](https://github.com/MariooY2/NFTDrop/tree/main/public/main.png)
+![Cosmic Voyagers NFT](https://github.com/MariooY2/NFTDrop/blob/main/public/main.png?raw=true)
 
 A next-generation NFT collection that takes you on an interstellar journey through the cosmos.
 
@@ -144,5 +144,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 
 Project Link: [Link](https://github.com/MariooY2/NFTDrop)
-
-Created with
