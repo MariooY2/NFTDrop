@@ -27,8 +27,8 @@ export default function StatsSection() {
       };
 
       // Animation logic
-      const duration = 2000; // 2 seconds animation
-      const steps = 50; // number of steps in the animation
+      const duration = 10000; // 2 seconds animation
+      const steps = 400; // number of steps in the animation
       const interval = duration / steps;
 
       let step = 0;

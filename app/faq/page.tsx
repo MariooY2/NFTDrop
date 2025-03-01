@@ -130,7 +130,7 @@ const FAQPage: React.FC = () => {
 
   return (
     <>
-      <div className="min-h-screen  text-white">
+      <div className=" text-white">
         {/* Hero Section */}
         <header className="relative py-20">
           <div className="absolute inset-0 z-0 opacity-20">
